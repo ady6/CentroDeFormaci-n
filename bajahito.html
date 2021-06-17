@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description"
+	content="Mi web para el hito">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="csshito.css">
+    <title>Dar de baja a un alumno</title>
+</head>
+
+<!-- 
+	Formulario donde escribir el DNI del alumno que queremos dar de alta 
+-->
+
+<body>
+    <h1>Formulario a rellenar</h1>
+<form method="post" action="baja.php" name="form">
+<fieldset>
+<legend>Dar de baja a alumno</legend>
+		<label for="dni">DNI del alumno: </label>
+		<input type="text" name="dni" required 
+			placeholder="Escribe tu DNI">
+		</p>
+		<input type="submit" value="Dar de baja">
+		<input type="reset" value="Borrar">
+		</fieldset>
+	</form>
+	<br>
+<br>
+<nav>
+	<a href="registrarhito.html">➳ Registrar a un alumno</a> <br><br>
+    <a href="modificarhito.html">➳ Modificar los datos de un alumno</a> <br><br>
+    <a href="aceptarhito.html">➳ Aceptar a un alumno</a> <br><br>
+    <a href="listado.php">➳ Ver listado de alumnos</a> 
+  </nav>
+    <img src="imagen2.png">
+</body>
+</html>

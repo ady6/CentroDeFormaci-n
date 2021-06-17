@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description"
+	content="Mi web para el hito">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="csshito.css">
+    <title>Registrar a un alumno</title>
+</head>
+
+<!-- 
+	Formulario para poder registrar los datos del alumno, rellenando los campos 
+	correspondientes a los de la tabla de la BBDD	
+-->
+
+<body>
+    <h1>Formulario a rellenar</h1>
+	<form method="post" action="registrar.php" name="form">
+	<fieldset>
+		<legend>Datos personales:</legend>
+		<input type="hidden" name="aceptado" value="0">
+		<p>
+		<label for="dni">DNI: </label>
+		<input type="text" name="dni" required 
+			placeholder="Escribe tu DNI">
+		</p>
+		<p>
+		<label for="nombre">Nombre: </label>
+		<input type="text" name="nombre" required 
+			placeholder="Escribe tu nombre">
+		</p>
+		<p>
+		<p>
+		<label for="apellidos">Apellidos: </label>
+		<input type="text" name="apellidos" required 
+			placeholder="Escribe tus apellidos">
+		</p>
+		<p>
+		<label for="fechaNac">Fecha de nacimiento: </label>
+		<input type="date" name="fechaNac">
+		</p>
+		<p>
+		<label for="correo">Correo electrónico: </label>
+		<input type="email" name="correo" required 
+			placeholder="Escribe tu correo electrónico">
+		</p>
+		<p>
+		<label for="tlf">Teléfono: </label>
+		<input type="number" name="tlf" required 
+			placeholder="Escribe tu número de tlf">
+		</p>
+		<p>
+		<label for="dirección">Dirección: </label>
+		<input type="text" name="dirección" required 
+			placeholder="Escribe tu dirección"                                                                                                                                                                                                                                                         ción">
+		</p>
+		<label for="ciudad">Ciudad: </label>
+		<input type="text" name="ciudad" required 
+			placeholder="Escribe tu ciudad">
+		</p>
+		<label for="provincia">Provincia: </label>
+		<input type="text" name="provincia" required 
+			placeholder="Escribe tu provincia">
+		</p>
+		<label for="codpost">Código postal: </label>
+		<input type="number" name="codpost" required 
+			placeholder="Escribe tu código postal">
+		</p>
+
+		<input type="submit" value="Enviar">
+		<input type="reset" value="Borrar">
+	</fieldset>
+	</form>
+	<br><br>
+	<nav>
+		<a href="modificarhito.html">➳ Modificar los datos de un alumno</a> <br><br>
+		<a href="bajahito.html">➳ Dar de baja a un alumno</a> <br><br>
+		<a href="aceptarhito.html">➳ Aceptar a un alumno</a> <br><br>
+		<a href="listado.php">➳ Ver listado de alumnos</a> 
+	  </nav>
+    <img src="imagen2.png">
+</body>
+</html>
